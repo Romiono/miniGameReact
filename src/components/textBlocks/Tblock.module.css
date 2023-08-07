@@ -1,0 +1,48 @@
+/*@font-face {*/
+/*    font-family: 'Bebas Neue';*/
+/*    */
+/*}*/
+
+.tBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 200px 0 200px;
+}
+
+.mainText {
+    position: relative;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    width: 900px;
+    height: auto;
+    color: #A08691;
+}
+
+.hexagone {
+    position: relative;
+}
+
+.title {
+    font-family: "Golos Text VF";
+    font-weight: bold;
+    font-size: 27px;
+    letter-spacing: 1.35px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    color: #60404E;
+    position: relative;
+    bottom: 15px;
+    position: relative;
+    left: 4px;
+}
+
+.title::before {
+    content: url('../../images/Union.png');
+    position: relative;
+    top: 4px;
+    right: 4px;
+    /*width: 21px;*/
+    /*height: 27px;*/
+}
