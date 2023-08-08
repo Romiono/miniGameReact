@@ -1,0 +1,11 @@
+.btn{
+    width: 200px;
+    height: 60px;
+    background-color: #E1D2D2;
+    border-radius: 10px;
+    border: 0px;
+    font-family: "Golos Text VF";
+    font-weight: bold;
+    font-size: 40px;
+    color: #60404E;
+}

@@ -1,0 +1,20 @@
+.inp {
+    border: 2px solid #A08691;
+    color: #A08691;
+    width: 400px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    margin: 10px;
+    text-align: center;
+}
+
+.inp::-webkit-input-placeholder{
+    text-align: center;
+}
+
+.inp:hover {
+    border: 2px solid #60404E;
+}

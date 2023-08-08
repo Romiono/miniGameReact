@@ -1,0 +1,11 @@
+.button {
+    width: 250px;
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    border-radius: 10px;
+    border: 2px solid #A08691;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    color: #A08691;
+    margin: 8px;
+}
