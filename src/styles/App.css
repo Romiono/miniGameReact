@@ -1,26 +1,6 @@
-.headerStyle {
-    background-color: #E1D2D2;
-    color: #60404E;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.navStyle{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-}
-.linkStyle {
-    margin: 0 10px;
+*{
+    margin: 0px;
     text-decoration: none;
-    color: #60404E;
-}
-.linkStyle:hover{
-    color: #37252D;
-    border-bottom: 2px solid #37252D ;
-}
-.logoImage{
-    max-width: 50px;
-    max-height: 50px;
+    padding: 0;
+    box-sizing: border-box;
 }

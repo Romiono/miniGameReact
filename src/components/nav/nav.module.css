@@ -1,0 +1,37 @@
+.headerStyle {
+    margin: 0;
+    color: #60404E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-origin: border-box;
+    background-position-y: top;
+
+}
+.backgroundImg{
+    position: fixed;
+    left: -20px;
+    right: 0;
+    top: -10px;
+    z-index: -1;
+}
+
+.navStyle{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.linkStyle {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #60404E;
+}
+.linkStyle:hover{
+    color: #37252D;
+    border-bottom: 2px solid #37252D ;
+}
+.logoImage{
+    max-width: 55px;
+    max-height: 55px;
+}
