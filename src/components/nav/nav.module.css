@@ -1,0 +1,56 @@
+.headerStyle {
+
+    flex-direction: row;
+    margin: 0;
+    color: #60404E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    /*background-origin: border-box;*/
+    background-position-y: top;
+
+}
+.backgroundImg{
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: 30px;
+    z-index: 0;
+    width: 110%;
+    height: 130px;
+
+}
+
+.navStyle{
+    background-image: url("../../images/vector7.png");
+    font-family: "Golos Text VF";
+    font-size: 27px;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.linkStyle {
+    margin: 0px 50px 0 0;
+    text-decoration: none;
+    color: #60404E;
+}
+.linkStyle:hover{
+    color: #37252D;
+    text-decoration: underline 2px #60404E;
+    font-weight: bold;
+}
+.logoImage{
+    margin: 20px 50px;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.bg {
+    background-image: url("../../images/vector7.png");
+}
+

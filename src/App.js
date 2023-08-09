@@ -6,12 +6,21 @@ import AuthInput from "./components/inputs/AuthInput";
 import Modal from "./components/modalWindows/Modal";
 import AuthButton from "./components/buttons/AuthButton";
 import OriginButton from "./components/buttons/OriginButton";
+import Nav from "./components/nav/nav";
+import BG1 from "./images/BG1.png"
 
 function App() {
     const [modal, setModal] = useState(false)
+
+
+
+
   return (
     <div className="App">
-        <OriginButton value={'Войти'} onClick={() => setModal(true)}/>
+        <Nav></Nav>
+        <img style={{bottom: '30px'}} className='BG' src={BG1} alt={'bg.png'}/>
+
+        {/*<OriginButton value={'Войти'} onClick={() => setModal(true)}/>*/}
         <Modal visible={modal} setVisible={setModal}>
             <AuthInput preview={'Login'} type={'text'}/>
             <AuthInput preview={'Password'} type={'password'}/>
@@ -29,7 +38,6 @@ function App() {
            представляет собой свидетельство амбициозных усилий авторов в реализации данной идеи.`}
           img={require('./images/hexagone.png')}
         />
-        <img style={{position: "relative", width: '100%' }} src={Image} alt={'1.png'}/>
         <Tblock
           title={'Типа об идее'}
           value={`Идея создания веб-платформы с настольными играми зародилась на основе пристрастия и глубокой

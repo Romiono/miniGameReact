@@ -3,6 +3,22 @@
 /*    */
 /*}*/
 
+.all {
+    position: relative;
+    bottom: 100px;
+}
+
+.paperInv {
+    transform: rotate(180deg);
+}
+
+.Paper {
+    width: 110%;
+    position: relative;
+    right: 20px;
+    height: 100px;
+}
+
 .tBlock {
     display: flex;
     justify-content: space-between;
