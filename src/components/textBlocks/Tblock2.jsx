@@ -6,7 +6,7 @@ const Tblock2 = ({title, value, img}) => {
 
     return (
         <div className={classes.all} style={{width: '100%', bottom: "350px"}}>
-            <img className={[classes.paperInv, classes.Paper].join(' ')} src={paper} alt={'paper.png'}/>
+            <img className={[classes.paperInv, classes.Paper].join(' ')} src={paper} alt={'paper.png'} style={{top: '10px'}}/>
             <div className={classes.tBlock}>
                 <img src={img} className={classes.hexagone} alt={'D.png'}/>
                 <div>

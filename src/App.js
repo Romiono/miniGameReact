@@ -10,6 +10,8 @@ import Nav from "./components/nav/nav";
 import BG1 from "./images/BG1.png"
 import BG2 from "./images/BG2.png"
 import BG3 from "./images/BG3.png"
+import BG4 from "./images/BG4.png"
+import paper from  './images/vector7.png'
 import Tblock2 from "./components/textBlocks/Tblock2";
 
 function App() {
@@ -21,7 +23,7 @@ function App() {
   return (
     <div className="App">
         <Nav></Nav>
-        <img style={{bottom: '30px'}} className='BG' src={BG1} alt={'bg.png'}/>
+        <img className='BG' src={BG1} alt={'bg.png'}/>
 
         {/*<OriginButton value={'Войти'} onClick={() => setModal(true)}/>*/}
         <Modal visible={modal} setVisible={setModal}>
@@ -41,7 +43,7 @@ function App() {
            представляет собой свидетельство амбициозных усилий авторов в реализации данной идеи.`}
           img={require('./images/hexagone.png')}
         />
-        <img style={{bottom: '290px'}} className='BG' src={BG2} alt={'bg.png'}/>
+        <img className='BG2' src={BG2} alt={'bg.png'}/>
         <Tblock2
             title={'О проекте'}
             value={`Проект представляет собой веб-платформу, спроектированную с использованием языков разметки HTML и CSS,
@@ -54,7 +56,7 @@ function App() {
             представляет собой свидетельство амбициозных усилий авторов в реализации данной идеи.`}
             img={require('./images/D20.png')}
         />
-        <img style={{bottom: '380px'}} className='BG' src={BG3} alt={'bg.png'}/>
+        <img className='BG3' src={BG3} alt={'bg.png'}/>
         <Tblock
             styles={{bottom: '160px'}}
             title={'Типа об идее'}
@@ -69,6 +71,8 @@ function App() {
             `}
             img={require('./images/D20_2.png')}
         />
+        <img className='BG4' src={BG4} alt={'bg.png'}/>
+        <img src={paper} className={'paper'}/>
     </div>
   );
 }
