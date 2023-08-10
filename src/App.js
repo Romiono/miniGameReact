@@ -43,7 +43,7 @@ function App() {
            представляет собой свидетельство амбициозных усилий авторов в реализации данной идеи.`}
           img={require('./images/hexagone.png')}
         />
-        <img className='BG2' src={BG2} alt={'bg.png'}/>
+        <img className='BG' src={BG2} alt={'bg.png'}/>
         <Tblock2
             title={'О проекте'}
             value={`Проект представляет собой веб-платформу, спроектированную с использованием языков разметки HTML и CSS,
@@ -56,7 +56,7 @@ function App() {
             представляет собой свидетельство амбициозных усилий авторов в реализации данной идеи.`}
             img={require('./images/D20.png')}
         />
-        <img className='BG3' src={BG3} alt={'bg.png'}/>
+        <img className='BG' src={BG3} alt={'bg.png'}/>
         <Tblock
             styles={{bottom: '160px'}}
             title={'Типа об идее'}
@@ -71,8 +71,7 @@ function App() {
             `}
             img={require('./images/D20_2.png')}
         />
-        <img className='BG4' src={BG4} alt={'bg.png'}/>
-        <img src={paper} className={'paper'}/>
+        <img className='BG' src={BG4} alt={'bg.png'}/>
     </div>
   );
 }
