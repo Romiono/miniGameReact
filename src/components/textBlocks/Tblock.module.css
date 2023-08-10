@@ -5,21 +5,35 @@
 
 .all {
     position: relative;
-    top: 800px;
     z-index: 1;
-    margin-bottom: 800px;
+}
+
+.all::after {
+    content: url("../../images/Vector1.png");
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    bottom: -160px;
+    z-index: -1;
+    left: -15px;
+    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);*/
+}
+
+.all::before {
+    content: url("../../images/Vector1.png");
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    top: -160px;
+    transform: rotate(180deg);
+    z-index: -1;
+    left: 15px;
 }
 
 .paperInv {
     transform: rotate(180deg);
 }
 
-.Paper {
-    width: 110%;
-    position: relative;
-    right: 20px;
-    height: 150px;
-}
 
 .tBlock {
     display: flex;
