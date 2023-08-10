@@ -18,12 +18,42 @@
 }
 
 .BG {
+    top: 80px;
     width: 100%;
-    position: relative;
+    position: absolute;
+    z-index: 0;
+}
+
+.BG2 {
+    top: 1700px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.BG3 {
+    top: 3080px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.BG4 {
+    top: 4980px;
+    height: 1080px;
+    width: 100%;
+    position: absolute;
     z-index: 0;
 }
 
 .TB {
     position: relative;
     bottom: 100px;
+}
+
+.paper {
+    position: relative;
+    transform: rotate(180deg);
+    width: 110%;
+    margin-top: 800px;
 }

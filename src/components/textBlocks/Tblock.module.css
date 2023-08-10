@@ -5,8 +5,9 @@
 
 .all {
     position: relative;
-    bottom: 260px;
+    top: 800px;
     z-index: 1;
+    margin-bottom: 800px;
 }
 
 .paperInv {
@@ -18,7 +19,6 @@
     position: relative;
     right: 20px;
     height: 150px;
-    top: 10px
 }
 
 .tBlock {
