@@ -5,7 +5,8 @@
 
 .all {
     position: relative;
-    bottom: 100px;
+    bottom: 260px;
+    z-index: 1;
 }
 
 .paperInv {
@@ -16,14 +17,17 @@
     width: 110%;
     position: relative;
     right: 20px;
-    height: 100px;
+    height: 150px;
+    top: 10px
 }
 
 .tBlock {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 200px 0 200px;
+    padding: 0 200px 0 200px;
+    background-color: #E7DEE1;
+    width: 100%;
 }
 
 .mainText {
