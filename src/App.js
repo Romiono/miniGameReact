@@ -74,7 +74,7 @@ function App() {
         />
         <img className={['BG', 'lastBg'].join(' ')} src={BG4} alt={'bg.png'}/>
         <img className='top-paper' src={Paper} alt="paper"/>
-        <Passage text='Список настольного секса'>
+        <Passage text='Список настольных игр'>
         </Passage>
         <Basement>
 
