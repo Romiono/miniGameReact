@@ -1,0 +1,56 @@
+.Passage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+
+}
+.Arrows{
+    margin-top: 55px;
+    height: auto;
+    width: 220px;
+}
+.Arrows2{
+    transform: scale(-1,1);
+    margin-top: 55px;
+    height: auto;
+    width: 220px;
+}
+.Line{
+
+}
+.text{
+    color: #60404E;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: "Golos Text VF";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 16px;
+    margin-bottom: 20px;
+}
+.all::after {
+    background-image: url("../../images/Vector1.png");
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    bottom: -160px;
+    z-index: -1;
+    left: -15px;
+    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);*/
+}
+
+.all::before {
+    background-image: url("../../images/Vector1.png");
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    top: -160px;
+    transform: rotate(180deg);
+    z-index: -1;
+    left: 15px;
+}

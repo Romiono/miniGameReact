@@ -11,9 +11,10 @@ import BG1 from "./images/BG1.png"
 import BG2 from "./images/BG2.png"
 import BG3 from "./images/BG3.png"
 import BG4 from "./images/BG4.png"
-import paper from  './images/vector7.png'
+import Paper from  './images/Vector1.png'
 import Tblock2 from "./components/textBlocks/Tblock2";
-
+import Passage from "./components/passage/Passage";
+import Basement from "./components/basement/basement";
 function App() {
     const [modal, setModal] = useState(false)
 
@@ -71,9 +72,14 @@ function App() {
             `}
             img={require('./images/D20_2.png')}
         />
-        <img className='BG' src={BG4} alt={'bg.png'}/>
+        <img className={['BG', 'lastBg'].join(' ')} src={BG4} alt={'bg.png'}/>
+        <img className='top-paper' src={Paper} alt="paper"/>
+        <Passage text='Список настольного секса'>
+        </Passage>
+        <Basement>
+
+        </Basement>
     </div>
   );
 }
-
 export default App;

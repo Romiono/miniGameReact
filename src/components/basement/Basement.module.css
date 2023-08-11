@@ -1,0 +1,35 @@
+.Basement{
+    background: #BEB8BA;
+    width: 100%;
+    padding: 30px;
+}
+.Contacts{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.img{
+    padding: 15px;
+}
+.Dice{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    position: relative;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    width: 900px;
+    height: auto;
+    color: #60404E;
+}
+.bottomPart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
