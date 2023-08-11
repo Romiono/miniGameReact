@@ -11,29 +11,21 @@
 .all::after {
     content: url("../../images/Vector1.png");
     position: absolute;
-    width: 100%;
-    background-size: cover;
+    width: 100vw;
     bottom: -160px;
     z-index: -1;
-    left: -15px;
-    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);*/
+    left: -25px;
 }
 
 .all::before {
     content: url("../../images/Vector1.png");
     position: absolute;
-    width: 100%;
-    background-size: cover;
+    width: 100vw;
     top: -160px;
+    right: -20px;
     transform: rotate(180deg);
     z-index: -1;
-    left: 15px;
 }
-
-.paperInv {
-    transform: rotate(180deg);
-}
-
 
 .tBlock {
     display: flex;
@@ -53,6 +45,7 @@
     width: 900px;
     height: auto;
     color: #A08691;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .hexagone {
