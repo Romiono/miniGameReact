@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from "./AuthInput.module.css";
-const AuthInput = ({type, preview}) => {
+const AuthInput = ({type, preview, onclick}) => {
     return (
         <div>
-            <input className={classes.inp} type={type} placeholder={preview}/>
+            <input onClick={onclick} className={classes.inp} type={type} placeholder={preview}/>
         </div>
     );
 };
