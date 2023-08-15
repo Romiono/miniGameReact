@@ -9,15 +9,15 @@ import Previewgame from "./game/Previewgame";
 // import preview1 from '../../images/'
 
 const Gamebar = () => {
-
+    const [sortedGames, setSortedGames] = useState('')
     const [handleClick, setHandleClick] = useState(false)
     const [games, setGames] = useState([
-        {img: '', name: 'tik tik tak', onClick: ''},
-        {img: '', name: 'bunker', onClick: ''},
-        {img: '', name: 'cat', onClick: ''},
-        {img: '', name: 'tik tik tak', onClick: ''},
-        {img: '', name: 'tik tik tak', onClick: ''},
-        {img: '', name: 'tik tik tak', onClick: ''},
+        {img: 'b', name: 'sdfg', onClick: ''},
+        {img: 'a', name: 'bunker', onClick: ''},
+        {img: 'c', name: 'cat', onClick: ''},
+        {img: 'd', name: 'tfghj', onClick: ''},
+        {img: 'e', name: 'tasdak', onClick: ''},
+        {img: 'a', name: 'sfgak', onClick: ''},
     ])
     const searching = (e) => {
         e.stopPropagation()
@@ -27,11 +27,24 @@ const Gamebar = () => {
         setHandleClick(false)
     }
 
+    const sortGames = (sort) => {
+        setSortedGames(sort)
+        setGames([...games].sort((a, b) => a[sort].localeCompare(b[sort])))
+    }
+
     return (
         <div className={classes.gameBar} onClick={unSearching}>
             <div className={classes.header}>
                 <div className={classes.headerIN}>
-                    <Selectel first={'sort'} second={'sort'} treeth={'asdfasdf'}/>
+                    <Selectel
+                        options={[
+                            {title: 'По названию', value: 'name'},
+                            {title: 'По изображению', value: 'img'},
+                        ]}
+                        defaultValue={'sort'}
+                        value={sortedGames}
+                        onChange={sortGames}
+                    />
                     {handleClick ? <AuthInput onclick={(e) => e.stopPropagation()}/> : <img src={search} onClick={searching}/>}
                 </div>
             </div>
