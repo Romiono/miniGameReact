@@ -1,0 +1,31 @@
+.gameBar {
+    width: 80%;
+    height: 1450px;
+    margin: 0 200px ;
+    border: 2px solid #A08691;
+    border-radius: 50px
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-right: -35px;
+    border-bottom: solid 2px #A08691;
+    height: 80px;
+}
+
+.headerIN {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 50px;
+    height: 80px;
+}
+
+.curent {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+}

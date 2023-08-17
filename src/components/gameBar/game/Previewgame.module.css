@@ -1,0 +1,25 @@
+.main {
+    width: 90%;
+    min-height: 300px;
+    /*background-color: black;*/
+    margin: 5%;
+}
+
+.img {
+    width: 100%;
+    min-height: 270px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.text {
+    font-family: "Golos Text VF";
+    text-transform: uppercase;
+    color: #37252D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

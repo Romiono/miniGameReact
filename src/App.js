@@ -13,10 +13,10 @@ import BG3 from "./images/BG3.png"
 import BG4 from "./images/BG4.png"
 import paper from  './images/vector7.png'
 import Tblock2 from "./components/textBlocks/Tblock2";
+import Gamebar from "./components/gameBar/Gamebar";
 
 function App() {
     const [modal, setModal] = useState(false)
-
 
 
 
@@ -71,6 +71,7 @@ function App() {
             img={require('./images/D20_2.png')}
         />
         <img className='BG' src={BG4} alt={'bg.png'}/>
+        <Gamebar></Gamebar>
     </div>
   );
 }
