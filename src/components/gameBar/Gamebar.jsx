@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import classes from './Gamebar.module.css'
 import Selectel from "../selectels/selectel";
 import search from '../../images/search.png'
@@ -9,6 +9,7 @@ import Previewgame from "./game/Previewgame";
 // import preview1 from '../../images/'
 
 const Gamebar = () => {
+    const [searchQuery, setSearchQuery] = useState('')
     const [sortedGames, setSortedGames] = useState('')
     const [handleClick, setHandleClick] = useState(false)
     const [games, setGames] = useState([
@@ -19,17 +20,32 @@ const Gamebar = () => {
         {img: 'e', name: 'tasdak', onClick: ''},
         {img: 'a', name: 'sfgak', onClick: ''},
     ])
+
+    //----------------------------------------------------------------------------
     const searching = (e) => {
         e.stopPropagation()
         setHandleClick(true)
     }
+
     const unSearching = () => {
         setHandleClick(false)
     }
 
+    //----------------------------------------------------------------------------
+
+    const postSortedGames = useMemo(() => {
+        if(sortedGames) {
+            return [...games].sort((a, b) => a[sortedGames].localeCompare(b[sortedGames]))
+        }
+        return games
+    }, [sortedGames, games])
+
+    const sortAndSearchGames = useMemo(() => {
+        return postSortedGames.filter(game => game.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    }, [searchQuery, postSortedGames])
+
     const sortGames = (sort) => {
         setSortedGames(sort)
-        setGames([...games].sort((a, b) => a[sort].localeCompare(b[sort])))
     }
 
     return (
@@ -45,12 +61,19 @@ const Gamebar = () => {
                         value={sortedGames}
                         onChange={sortGames}
                     />
-                    {handleClick ? <AuthInput onclick={(e) => e.stopPropagation()}/> : <img src={search} onClick={searching}/>}
+                    {handleClick
+                        ?
+                        <AuthInput
+                            onclick={(e) => e.stopPropagation()}
+                            value={searchQuery}
+                            onChange={e => setSearchQuery(e.target.value)}
+                        />
+                        : <img src={search} onClick={searching}/>}
                 </div>
             </div>
             <div className={classes.curent}>
                 {
-                    games.map(game =>
+                    sortAndSearchGames.map(game =>
                         <Previewgame preview={game} key={game.name}/>
                     )
                 }
